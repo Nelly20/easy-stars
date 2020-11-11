@@ -1,0 +1,117 @@
+.modal {
+  width: 300px;
+}
+
+.close {
+  width: 15px;
+  height: 24px;
+
+  background-color: transparent;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  &:hover {
+    background-image: url("../img/close-hover.png");
+  }
+
+  &:focus {
+    background-image: url("../img/close-hover.png");
+    outline: none;
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal-input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+
+  border: 1px solid $special-grey;
+  border-radius: 40px;
+
+  &:hover {
+    border-color: $basic-yellow;
+  }
+
+  &:focus {
+    border-color: $basic-yellow;
+    outline: none;
+  }
+}
+
+.modal-btn {
+  width: 100px;
+  height: 40px;
+
+  font-weight: 800;
+  font-size: 14px;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  background: linear-gradient(180deg, #ffaf36 0%, #d5830a 100%),
+    linear-gradient(0deg, #c4c4c4, #c4c4c4);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 0.7;
+  }
+}
+
+.modal-link {
+  color: $basic-black;
+
+  &:hover {
+    color: $basic-yellow;
+  }
+
+  &:focus {
+    color: $basic-yellow;
+
+    outline: none;
+  }
+}
+
+.password {
+  margin-top: 100px;
+
+  & form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.password__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  font-size: 30px;
+}
+
+.password__input {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.password__btn {
+  width: 150px;
+}
+
+@media screen and (max-width: 396px) {
+  .password__input {
+    margin-bottom: 20px;
+  }
+}

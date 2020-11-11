@@ -1,0 +1,51 @@
+.programme-description {
+  margin-top: 100px;
+  padding: 100px 0;
+
+  background-image: url("../img/programme-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.programme-description__title {
+  @include big-header;
+}
+
+.programme-description__video {
+  @include video;
+}
+
+.programme-description__subtitle {
+  @include main-text;
+
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .programme-description__video {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .programme-description__title {
+    @include big-header-mobile;
+  }
+
+  .programme-description {
+    margin-top: 50px;
+    padding: 70px 0;
+  }
+
+  .programme-description__subtitle {
+    @include main-text-mobile;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .programme-description__title {
+    width: 300px;
+
+    font-size: 20px;
+  }
+}

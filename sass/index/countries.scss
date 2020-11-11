@@ -1,0 +1,205 @@
+.countries {
+  margin-top: 50px;
+  padding: 150px 0 100px 0;
+
+  background-image: url("../img/programme-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countries__title {
+  @include big-header;
+}
+
+.countries__list {
+  @include reset-list;
+
+  display: grid;
+  margin-top: 50px;
+
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.countries__list-item {
+  padding: 5px 0 5px 60px;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.countries__list-item-header {
+  margin-bottom: 0;
+
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.countries__list-item--russia {
+  background-image: url("../img/russia.png");
+}
+
+.countries__list-item--ukraine {
+  background-image: url("../img/ukraine.png");
+}
+
+.countries__list-item--belarussia {
+  background-image: url("../img/belarussia.png");
+}
+
+.countries__list-item--kazachstan {
+  background-image: url("../img/kazach.png");
+}
+
+.countries__list-item--uzbekistan {
+  background-image: url("../img/uzbek.png");
+}
+
+.countries__list-item--georgia {
+  background-image: url("../img/georgia.png");
+}
+
+.countries__list-item--azerbajdjan {
+  background-image: url("../img/azerbaj.png");
+}
+
+.countries__list-item--greece {
+  background-image: url("../img/greece.png");
+}
+
+.countries__list-item--turkish {
+  background-image: url("../img/turkish.png");
+}
+
+.countries__list-item--germany {
+  background-image: url("../img/german.png");
+}
+
+.countries__list-item--france {
+  background-image: url("../img/france.png");
+}
+
+.countries__list-item--italy {
+  background-image: url("../img/italy.png");
+}
+
+.countries__list-item--usa {
+  background-image: url("../img/usa.png");
+}
+
+.countries__list-item--armenia {
+  background-image: url("../img/armenia.png");
+}
+
+.countries__list-item--bulgaria {
+  background-image: url("../img/bulgaria.png");
+}
+
+.countries__list-item--austria {
+  background-image: url("../img/austria.png");
+}
+
+.countries__list-item--israel {
+  background-image: url("../img/israel.png");
+}
+
+.countries__list-item--sweden {
+  background-image: url("../img/swizerland.png");
+}
+
+.countries__list-item--ciprus {
+  background-image: url("../img/ciprus.png");
+}
+
+.countries__list-item--spanish {
+  background-image: url("../img/spanish.png");
+}
+
+.countries__list-item--england {
+  background-image: url("../img/england.png");
+}
+
+.countries__list-item--maldives {
+  background-image: url("../img/maldives.png");
+}
+
+.countries__list-item--moldovia {
+  background-image: url("../img/moldavia.png");
+}
+
+.countries__list-item--tadjikistan {
+  background-image: url("../img/tadji.png");
+}
+
+.countries__list-item--kirhizia {
+  background-image: url("../img/kirg.png");
+}
+
+.countries__list-item--latvia {
+  background-image: url("../img/latvia.png");
+}
+
+.countries__list-item--litva {
+  background-image: url("../img/litva.png");
+}
+
+.countries__list-item--chech {
+  background-image: url("../img/chech.png");
+}
+
+.countries__list-item--estonia {
+  background-image: url("../img/estonia.png");
+}
+
+.countries__list-item--belgium {
+  background-image: url("../img/belgium.png");
+}
+
+.countries__list-item--canada {
+  background-image: url("../img/canada.png");
+}
+
+.countries__list-item--turkmenia {
+  background-image: url("../img/turkmenia.png");
+}
+
+@media screen and (max-width: 991px) {
+  .countries__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .countries__list {
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .countries {
+    margin-top: 70px;
+  }
+
+  .countries__title {
+    @include big-header-mobile;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .countries {
+    padding-bottom: 50px;
+  }
+
+  .countries__title {
+    width: 300px;
+
+    font-size: 20px;
+  }
+
+  .countries__list {
+    margin-top: 30px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
