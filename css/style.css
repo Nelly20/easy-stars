@@ -340,14 +340,15 @@ a {
   list-style: none;
   display: grid;
   margin-top: 50px;
-  grid-gap: 30px;
+  grid-gap: 40px;
   grid-template-columns: 1fr 1fr; }
 
 .programmes-list__item {
-  padding: 180px 40px 40px;
+  padding: 150px 40px 40px;
   background-color: #f8f8f8;
   background-image: url("../img/star.png");
   background-repeat: no-repeat;
+  background-size: 200px auto;
   background-position: center top;
   border-radius: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); }
@@ -358,14 +359,15 @@ a {
   line-height: 30px;
   text-align: center;
   color: #0b132a;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 20px; }
 
 .programmes-list__description {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 16px;
   color: #343333; }
 
 @media screen and (max-width: 767px) {
