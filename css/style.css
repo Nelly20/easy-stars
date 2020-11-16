@@ -172,9 +172,9 @@ a {
   z-index: 0;
   margin-top: 50px;
   padding: 200px 0 100px;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover; }
 
 .first-screen__title {
@@ -262,8 +262,9 @@ a {
 .programme-description {
   margin-top: 100px;
   padding: 100px 0;
-  background-image: url("../img/programme-bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover; }
 
 .programme-description__title {
@@ -471,8 +472,9 @@ a {
 .countries {
   margin-top: 50px;
   padding: 150px 0 100px 0;
-  background-image: url("../img/programme-bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover; }
 
 .countries__title {
@@ -803,9 +805,9 @@ a {
   z-index: 0;
   margin-top: 50px;
   padding: 200px 0 0;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover; }
 
 .marketing__title {
@@ -886,9 +888,9 @@ a {
   z-index: 0;
   margin-top: 50px;
   padding: 200px 0 100px;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover; }
 
 .payment__title {
@@ -1076,9 +1078,9 @@ a {
   z-index: 0;
   margin-top: 50px;
   padding: 200px 0 100px;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg.webp"), url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover; }
 
 .contacts-wrapper {
@@ -1444,8 +1446,8 @@ a {
 
 .prev-icon {
   position: absolute;
-  top: 200px;
-  left: -30px;
+  top: 50%;
+  left: 10px;
   width: 13px;
   height: 34px;
   background-image: url("../img/arrow-left.png");
@@ -1453,8 +1455,8 @@ a {
 
 .next-icon {
   position: absolute;
-  top: 200px;
-  right: -30px;
+  top: 50%;
+  right: 10px;
   width: 13px;
   height: 34px;
   background-image: url("../img/arrow-right.png");
