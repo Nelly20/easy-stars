@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EasyStars</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body class="page-body page-body--cabinet">
+    <header class="page-header container wow animate__animated animate__fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
+      <div class="col-12 header">
+        <nav class="navbar-expand-lg">
+          <a class="page-header__logo" href="index.html">
+          <img src="img/logo.svg" alt="logo" width="170" height="58">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse main-nav navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="marketing.html">Маркетинг</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="for-partners.html">Для партнеров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="payment.html">Оплата комисии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link user-nav__link--active user-nav__link--cabinet">Мой кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main content">
+      <h1 class="visually-hidden">EasyStars</h1>
+      <section class="cabinet-nav container">
+        <h2 class="cabinet-nav__title">Личный кабинет</h2>
+        <ul class="cabinet-nav__list">
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">магазин</a>
+          </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">EasyOffice</a>
+          </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">Пополнение</a>
+          </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">Реинвест</a>
+          </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">Финансовые продукты</a>
+          </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">Партнеру компании</a>
+          </li>
+          <li class="dropdown cabinet-nav__list-item">
+            <a class="dropdown-toggle cabinet-nav__list-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            еще
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item cabinet-nav__list-link" href="#">Тех. поддержка</a>
+              <a class="dropdown-item cabinet-nav__list-link" href="#">Вебинарная комната</a>
+              <a class="dropdown-item cabinet-nav__list-link" href="#">Контроль качества</a>
+              <a class="dropdown-item cabinet-nav__list-link" href="#">Редактировать профиль</a>
+              <a class="dropdown-item cabinet-nav__list-link" href="#">Моя реф. ссылка</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="personal-info container">
+        <div class="personal-info__wrapper">
+          <div class="personal-info-photo__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/user.webp">
+              <img src="img/user.jpg" alt="user">
+            </picture>
+            <div class="personal-info__text">
+              <h3 class="personal-info__header">Алена Миронова</h3>
+              <p class="personal-info__balance">Баланс: <span>2 000 руб</span></p>
+            </div>
+          </div>
+          <div class="personal-info__status">
+            <p class="personal-info__stars">Всего звезд:<br><span>10</span></p>
+            <p class="personal-info__partners">Всего партнеров:<br><span>14</span></p>
+          </div>
+        </div>
+        <div class="partners-number">
+          <h3 class="partners-number__header">Количество партнеров:</h3>
+          <ul class="partners-number__list">
+            <li class="partners-number__list-item">ICO <span>9</span></li>
+            <li class="partners-number__list-item">SkypeLead <span>9</span></li>
+            <li class="partners-number__list-item">TeleLead <span>9</span></li>
+            <li class="partners-number__list-item">EasyStars <span>9</span></li>
+            <li class="partners-number__list-item">VkLead <span>9</span></li>
+            <li class="partners-number__list-item">InstaLead <span>9</span></li>
+            <li class="partners-number__list-item">EasyВusiness <span>9</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="personal-info-news container">
+        <div>
+          <h3 class="chat__title">онлайн чат</h3>
+          <div class="chat">
+            <ul class="chat__list" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <li class="chat__list-item">
+                <picture>
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img class="chat__list-item-img" src="img/user.jpg" alt="user">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+              <li class="chat__list-item">
+                <picture>
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img class="chat__list-item-img" src="img/user.jpg" alt="user">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+              <li class="chat__list-item">
+                <picture>
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img class="chat__list-item-img" src="img/user.jpg" alt="user">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="news wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <div class="container">
+            <h2 class="chat__title">Новости компании</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ul class="news__list news__list--cabinet carousel-inner">
+                <li class="carousel-item active carousel-item--cabinet">
+                  <div class="news__list-group-item news__list-group-item--cabinet">
+                    <h3 class="news__list-group-item-header">Великий день глобальной колаборации</h3>
+                    <p class="news__list-group-item-text">06.10.20 в 17:30 состоится долгожданный выход продукта компании, эксклюзивно разработанного для партнёров GridGroup!</p>
+                    <p class="news__list-group-item-text">Это положит начало тесного сотрудничества компаний EasyStars и GridGroup.</p>
+                    <p class="news__list-group-item-text">Благодаря бесконечному, бесплатному трафику, обеспечит:<br>
+                      — Быстрое развитие партнерской компании<br>
+                      — Даст обоюдную возможность выхода на новые рынки<br>
+                      — Повысит доходы партнёров GRIDGROUP и всей компании в целом!
+                    </p>
+                  </div>
+                </li>
+                <li class="carousel-item carousel-item--cabinet">
+                  <div class="news__list-group-item news__list-group-item--cabinet">
+                    <h3 class="news__list-group-item-header">Кардинальные изменения</h3>
+                    <p class="news__list-group-item-text">С 25 августа 2020г, в клубе Easy Stars произошли кардинальные изменения, которые дали мощный толчок развитию клуба и вывели на кардинально другой уровень развития!</p>
+                  </div>
+                </li>
+                <li class="carousel-item carousel-item--cabinet">
+                  <div class="news__list-group-item news__list-group-item--cabinet">
+                    <h3 class="news__list-group-item-header">TeleLead</h3>
+                    <p class="news__list-group-item-text">В программу Easy Stars внедрен новый продукт: TeleLead. Этот продукт работает в мессенджере телеграмм для раскрутки любого бизнеса.</p>
+                  </div>
+                </li>
+                <li class="carousel-item carousel-item--cabinet">
+                  <div class="news__list-group-item news__list-group-item--cabinet">
+                    <h3 class="news__list-group-item-header">Программы</h3>
+                    <p class="news__list-group-item-text">Партнерам, приобретавшим звезду 1000р до 25 августа доступны в пользование
+                      3 программы:<br>
+                      - SkypeLead<br>
+                      - Instalead<br>
+                      - VkleadBusiness<br>
+                      Воспользоваться ими Вы можете просто запустив необходимую программу
+                      из основного софта EasyStars. Продавать эти программы без звезды соответствующего номинала
+                      в данном случае, не представляется возможным.
+                    </p>
+                  </div>
+                </li>
+                <li class="carousel-item carousel-item--cabinet">
+                  <div class="news__list-group-item news__list-group-item--cabinet">
+                    <h3 class="news__list-group-item-header">Рейтинг продаж</h3>
+                    <p class="news__list-group-item-text">Благодаря нововведениям, в клубе мощный всплеск продаж с 25 по 31 августа. Товарооборот компании достигал в сутки до 4000$. Многие партнеры клуба получили приличные доходы. Все это говорит
+                      о том, что клуб растет и развивается и у клуба огромные перспективы впереди
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="prev-icon prev-icon--cabinet" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="next-icon next-icon--cabinet" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer page-footer--marketing wow animate__animated animate__slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div class="col-12 container footer">
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" aria-label="Facebook">
+              <picture>
+                <source type="image/webp" srcset="img/facebook.webp">
+                <img src="img/facebook.png" width="38" height="38" alt="Facebook">
+              </picture>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" aria-label="Twitter">
+              <picture>
+                <source type="image/webp" srcset="img/twitter.webp">
+                <img src="img/twitter.png" width="38" height="38" alt="Twitter">
+              </picture>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" aria-label="Vimeo">
+              <picture>
+                <source type="image/webp" srcset="img/vimeo.webp">
+                <img src="img/vimeo.png" width="38" height="38" alt="Vimeo">
+              </picture>
+            </a>
+          </li>
+        </ul>
+        <p class="copyright">©Все права защищены, 2020</p>
+      </div>
+    </footer>
+    <!-- Вход -->
+    <div class="modal fade" id="enter" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="enterLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enterLabel">Вход</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input class="modal-input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-input" type="password" placeholder="Ваш пароль" required>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Войти</button>
+            <a href="password.html" class="modal-link">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Регистрация -->
+    <div class="modal fade" id="registration" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="registrationLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registrationLabel">Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input class="modal-input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+            <input class="modal-input" type="password" placeholder="Ваш пароль" required>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Готово</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
