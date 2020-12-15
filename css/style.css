@@ -806,11 +806,12 @@ a {
   font-size: 30px; }
 
 .password__input {
+  width: 400px;
   margin-right: 20px;
   margin-bottom: 0; }
 
 .password__btn {
-  width: 150px; }
+  padding: 10px 20px; }
 
 @media screen and (max-width: 396px) {
   .password__input {
@@ -1705,7 +1706,8 @@ a {
   .partners-number__list-item span {
     font-weight: 800;
     font-size: 16px;
-    font-family: "Oswald", "Arial", sans-serif; }
+    font-family: "Oswald", "Arial", sans-serif;
+    margin-left: 20px; }
 
 @media screen and (max-width: 1100px) {
   .partners-number__list {
@@ -1734,6 +1736,8 @@ a {
 .chat {
   position: relative;
   padding: 30px;
+  padding-left: 20px;
+  padding-right: 40px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1); }
@@ -1763,9 +1767,6 @@ a {
   color: #343333;
   text-transform: uppercase; }
 
-.chat__list-item-img {
-  width: 100px; }
-
 .chat__list {
   margin: 0;
   padding: 0;
@@ -1774,22 +1775,52 @@ a {
 .chat__list-item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 20px; }
   .chat__list-item:last-child {
     margin-bottom: 0; }
+  .chat__list-item textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    padding-left: 10px;
+    resize: none; }
+    .chat__list-item textarea:focus {
+      outline: none;
+      opacity: 0.8; }
+  .chat__list-item button {
+    border: none;
+    background-color: #ffaf36;
+    border-radius: 20px;
+    padding: 8px 20px;
+    color: #ffffff; }
+    .chat__list-item button:hover {
+      opacity: 0.8; }
+    .chat__list-item button:focus {
+      outline: none;
+      opacity: 0.8; }
 
 .chat__list-item-header {
+  order: 2;
   font-weight: 600;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 100px;
+  margin-top: 0; }
 
 .chat__list-item-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-left: 20px; }
 
 .chat__list-item-date {
-  font-size: 13px; }
+  font-size: 12px;
+  color: #343333;
+  opacity: 0.8;
+  order: 1;
+  align-self: flex-end;
+  margin-bottom: 0; }
 
 .chat__list-item-text {
   margin-left: 20px;
@@ -1803,14 +1834,14 @@ a {
   .chat__list-item {
     justify-content: flex-start; }
   .chat__list-item-img {
-    width: 60px; }
+    width: 80px; }
   .chat__list-item-wrapper,
   .chat__list-item-text {
-    margin-left: 30px; } }
+    margin-left: 30px; }
+  .chat__list-item textarea {
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
-  .chat__list-item-img {
-    width: 60px; }
   .chat__list-item-wrapper,
   .chat__list-item-text {
     margin-left: 20px; }
