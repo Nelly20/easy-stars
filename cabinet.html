@@ -76,12 +76,14 @@
           <li class="cabinet-nav__list-item">
             <a href="#" class="cabinet-nav__list-link">Партнеру компании</a>
           </li>
+          <li class="cabinet-nav__list-item">
+            <a href="#" class="cabinet-nav__list-link">Тех. поддержка</a>
+          </li>
           <li class="dropdown cabinet-nav__list-item">
             <a class="dropdown-toggle cabinet-nav__list-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             еще
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item cabinet-nav__list-link" href="#">Тех. поддержка</a>
               <a class="dropdown-item cabinet-nav__list-link" href="#">Вебинарная комната</a>
               <a class="dropdown-item cabinet-nav__list-link" href="#">Контроль качества</a>
               <a class="dropdown-item cabinet-nav__list-link" href="#">Редактировать профиль</a>
@@ -99,7 +101,11 @@
             </picture>
             <div class="personal-info__text">
               <h3 class="personal-info__header">Алена Миронова</h3>
-              <p class="personal-info__balance">Баланс: <span>2 000 руб</span></p>
+              <p class="personal-info__balance">Баланс:</p>
+              <p class="personal-info__balance"><span>2 000</span> RUB</p>
+              <p class="personal-info__balance"><span>200</span> USD</p>
+              <p class="personal-info__balance"><span>10</span> LeadCoin(LC)</p>
+              <p class="personal-info__balance"><span>3</span> TopCoin(TC)</p>
             </div>
           </div>
           <div class="personal-info__status">
@@ -118,6 +124,11 @@
             <li class="partners-number__list-item">InstaLead <span>9</span></li>
             <li class="partners-number__list-item">EasyВusiness <span>9</span></li>
           </ul>
+          <div>
+            <h3 class="partners-number__header">Моя реферальная ссылка:</h3>
+            <input class="copy-link" type="text" value="https://www.behance.net/gallery/109664227/Design-landing-page-for-Astron" id="myInput">
+            <button class="copy-link-btn" onclick="myFunction()" onmouseout="outFunc()">Копировать ссылку</button>
+          </div>
         </div>
       </section>
       <section class="personal-info-news container">
@@ -305,5 +316,7 @@
         </form>
       </div>
     </div>
+
+    <script src="copy-link.js"></script>
   </body>
 </html>

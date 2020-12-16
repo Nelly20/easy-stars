@@ -1616,7 +1616,7 @@ a {
 
 .personal-info-photo__wrapper {
   display: flex;
-  align-items: center; }
+  align-items: flex-start; }
 
 .personal-info__header {
   font-weight: 700;
@@ -1627,10 +1627,12 @@ a {
   margin-left: 30px; }
 
 .personal-info__balance {
-  font-size: 14px; }
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 400; }
   .personal-info__balance span {
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Oswald", "Arial", sans-serif; }
 
 .personal-info__stars {
@@ -1691,6 +1693,7 @@ a {
   list-style: none;
   display: grid;
   margin-top: 20px;
+  margin-bottom: 40px;
   grid-column-gap: 60px;
   grid-template-columns: 1fr 1fr 1fr; }
 
@@ -1708,6 +1711,66 @@ a {
     font-size: 16px;
     font-family: "Oswald", "Arial", sans-serif;
     margin-left: 20px; }
+
+.copy-link {
+  width: 70%;
+  border: 1px solid #eae8e8;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding: 5px 15px;
+  margin-right: 20px; }
+  .copy-link:hover {
+    border-color: #eae8e8; }
+  .copy-link:focus {
+    outline: none;
+    border-color: #eae8e8; }
+
+.copy-link-btn {
+  border: 1px solid #ffaf36;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding: 5px 15px; }
+  .copy-link-btn:hover {
+    border-color: #eae8e8; }
+  .copy-link-btn:focus {
+    outline: none;
+    border-color: #eae8e8; }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
 
 @media screen and (max-width: 1100px) {
   .partners-number__list {
@@ -1833,13 +1896,13 @@ a {
     padding: 40px; }
   .chat__list-item {
     justify-content: flex-start; }
+    .chat__list-item textarea {
+      width: 100%; }
   .chat__list-item-img {
     width: 80px; }
   .chat__list-item-wrapper,
   .chat__list-item-text {
-    margin-left: 30px; }
-  .chat__list-item textarea {
-    width: 100%; } }
+    margin-left: 30px; } }
 
 @media screen and (max-width: 500px) {
   .chat__list-item-wrapper,

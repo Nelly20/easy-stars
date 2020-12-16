@@ -84,7 +84,7 @@
         <div class="contacts-info-wrapper">
           <form class="contacts-info__form" method="post">
             <input class="contacts-info__input" type="text" placeholder="Ваше имя">
-            <input class="contacts-info__input" type="text" placeholder="Номер телефона">
+            <input class="contacts-info__input" type="text" placeholder="Номер телефона" id="phone">
             <input class="contacts-info__input" type="email" placeholder="E-mail">
             <input class="contacts-info__input" type="text" placeholder="Ваш ник или id Вконтакте или Telegram">
             <button class="contacts-info__btn" type="submit">отправить</button>
@@ -171,5 +171,13 @@
         </form>
       </div>
     </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+     $(document).ready(function() {
+       $("#phone").mask("+ (999) 999-9999");
+     });
+   </script>
   </body>
 </html>
