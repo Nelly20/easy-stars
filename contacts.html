@@ -163,9 +163,13 @@
           <div class="modal-body">
             <input class="modal-input" type="text" placeholder="Ваше имя" required>
             <input class="modal-input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-            <input class="modal-input" type="password" placeholder="Ваш пароль" required minlength="8">
+            <input class="modal-input" type="password" placeholder="Ваш пароль" required>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer__wrapper">
+            <div class="modal-checkbox">
+              <input class="modal-input-checkbox" type="checkbox" id="agree" required>
+              <label class="modal-label" for="agree">Я согласен с условиями</label>
+            </div>
             <button class="modal-btn" type="submit">Готово</button>
           </div>
         </form>
