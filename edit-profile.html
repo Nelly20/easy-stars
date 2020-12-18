@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>EasyStars</title>
+    <title>EasyStars Редактирование профиля</title>
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/min.normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
@@ -57,7 +57,6 @@
       <h1 class="visually-hidden">EasyStars</h1>
       <section class="cabinet-nav container">
         <h2 class="cabinet-nav__title">Личный кабинет</h2>
-
         <ul class="cabinet-nav__list">
           <li class="cabinet-nav__list-item">
             <a href="#" class="cabinet-nav__list-link">магазин</a>
@@ -92,15 +91,17 @@
           </li>
         </ul>
       </section>
-
-      <section class="personal-info container">
+      <section class="personal-info personal-info--edit container">
         <div class="personal-info__wrapper">
-          <div class="personal-info-photo__wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/user.webp">
-              <img src="img/user.jpg" alt="user">
-            </picture>
-            <h3 class="personal-info__header">Алена Миронова</h3>
+          <div>
+            <form method="post" class="personal-info__form">
+              <p class="personal-info__photo-text">Загрузите ваше фото</p>
+              <div class="personal-info__photo-input">
+                Загрузить фото<input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg">
+              </div>
+              <input class="personal-info__photo-btn" type="submit" value="Сохранить">
+            </form>
+            <h3 class="personal-info__header personal-info__header--edit">Алена Миронова</h3>
           </div>
           <div class="personal-info__text">
             <p class="personal-info__balance">Баланс:</p>
@@ -116,40 +117,92 @@
             <p class="personal-info__partners">Всего партнеров:<br><span>14</span></p>
           </div>
         </div>
-        <div class="partners-number">
-          <h3 class="partners-number__header">Количество партнеров:</h3>
-          <ul class="partners-number__list">
-            <li class="partners-number__list-item">ICO <span>9</span></li>
-            <li class="partners-number__list-item"> Franchise_EasyStars_company <span>9</span></li>
-            <li class="partners-number__list-item">TeleLead <span>9</span></li>
-            <li class="partners-number__list-item">EasyStars <span>9</span></li>
-            <li class="partners-number__list-item">VkLead <span>9</span></li>
-            <li class="partners-number__list-item">InstaLead <span>9</span></li>
-            <li class="partners-number__list-item">EasyВusiness <span>9</span></li>
-          </ul>
-          <div>
-            <h3 class="partners-number__header">Моя реферальная ссылка:</h3>
-            <input class="copy-link" type="text" value="https://www.behance.net/gallery/109664227/Design-landing-page-for-Astron" id="myInput">
-            <button class="copy-link-btn" onclick="myFunction()" onmouseout="outFunc()">Копировать ссылку</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div class="edit-profile">
-          <ul class="edit-profile__list">
-            <li class="edit-profile__item">
-              <p class="edit-profile__header">Ваш логин:</p><p>
+        <div class="container">
+          <div class="edit-profile">
+            <ul class="edit-profile__list">
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
                 </p><div class="edit-profile__item--wrapper">
                   <p class="edit-profile__text">@anton_24</p>
                   <a href="#" class="edit-profile__link">Изменить</a>
                 </div>
-
-            </li>
-          </ul>
-
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш пароль:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш логин:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">@anton_24</p>
+                  <a href="#" class="edit-profile__link">Изменить</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-
       </section>
     </main>
     <footer class="page-footer page-footer--marketing wow animate__animated animate__slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">

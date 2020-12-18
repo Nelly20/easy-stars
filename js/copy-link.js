@@ -16,3 +16,7 @@ function outFunc() {
   var tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Copy to clipboard";
 }
+
+jQuery(document).ready(function(){
+    jQuery('.scrollbar-inner').scrollbar();
+});

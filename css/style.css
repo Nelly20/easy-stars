@@ -758,6 +758,14 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center; }
+  .modal-body label {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .modal-body div {
+    width: 80%; }
+    .modal-body div input {
+      width: 100%; }
 
 .modal-label {
   width: 100%;
@@ -1631,6 +1639,9 @@ a {
   grid-gap: 30px;
   grid-template-columns: 350px 1fr; }
 
+.personal-info--edit {
+  margin-bottom: 80px; }
+
 .personal-info__wrapper {
   margin-top: 50px;
   padding: 30px;
@@ -1645,11 +1656,56 @@ a {
   display: flex;
   align-items: center; }
 
+.personal-info__photo-text {
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.personal-info__photo-input {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 28px 22px;
+  text-align: center;
+  color: #343333;
+  font-size: 15px;
+  background-color: #eae8e8;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  overflow: hidden; }
+
+input[type="file"] {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  z-index: 1; }
+
+.personal-info__photo-btn {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #ffaf36;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1); }
+
 .personal-info__header {
   font-weight: 700;
   font-size: 18px;
   font-family: "Oswald", "Arial", sans-serif;
   margin-left: 20px; }
+
+.personal-info__header--edit {
+  margin-left: 0; }
 
 .personal-info__text {
   margin-top: 10px; }
@@ -1763,6 +1819,7 @@ a {
   border: 1px solid #ffaf36;
   border-radius: 5px;
   background-color: #ffffff;
+  color: #ffaf36;
   margin-top: 15px;
   padding: 5px 15px; }
   .copy-link-btn:hover {
@@ -1838,13 +1895,37 @@ a {
   padding-right: 40px;
   padding-bottom: 170px;
   height: 450px;
-  overflow-y: scroll;
+  overflow: auto;
   background-color: #ffffff;
   border-radius: 20px; }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px; }
+
+::-webkit-scrollbar-button {
+  background-color: #eae8e8;
+  display: none; }
+
+::-webkit-scrollbar-track {
+  background-color: #999; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #eae8e8; }
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #c4c4c4;
+  border-radius: 5px; }
+
+::-webkit-scrollbar-corner {
+  background-color: #999; }
+
+::-webkit-resizer {
+  background-color: #666; }
+
 .chat__list-item-img {
-  margin-top: 20px;
-  margin-right: 20px; }
+  margin-top: 20px; }
 
 .chat__title {
   margin-bottom: 20px;
@@ -1858,8 +1939,9 @@ a {
   list-style: none; }
 
 .chat__list-item {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-column-gap: 10px;
   margin-bottom: 20px; }
   .chat__list-item:last-child {
     margin-bottom: 0; }
@@ -1903,7 +1985,8 @@ a {
   color: #343333;
   opacity: 0.8;
   order: 1;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  align-self: flex-end; }
 
 .chat__list-item-text {
   margin-left: 0;
@@ -1955,7 +2038,7 @@ a {
 .edit-profile {
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 50px;
   margin-top: 50px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1); }
 
@@ -1964,18 +2047,25 @@ a {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 100px; }
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px; }
 
 .edit-profile__item {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
 
 .edit-profile__header {
-  font-weight: 600; }
+  font-weight: 600;
+  margin-right: 30px; }
 
 .edit-profile__text {
   margin-bottom: 5px; }
 
 .edit-profile__link {
   color: #ffaf36; }
+  .edit-profile__link:hover {
+    color: #ffaf36;
+    opacity: 0.7; }
+  .edit-profile__link:focus {
+    outline: none;
+    opacity: 0.8; }

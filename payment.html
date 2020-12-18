@@ -21,7 +21,7 @@
       <div class="col-12 header">
         <nav class="navbar-expand-lg">
           <a class="page-header__logo" href="index.html">
-              <img src="img/logo.svg" alt="logo" width="170" height="58">
+          <img src="img/logo.svg" alt="logo" width="170" height="58">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -154,7 +154,7 @@
             <a href="#" aria-label="Facebook">
               <picture>
                 <source type="image/webp" srcset="img/facebook.webp">
-                  <img src="img/facebook.png" width="38" height="38" alt="Facebook">
+                <img src="img/facebook.png" width="38" height="38" alt="Facebook">
               </picture>
             </a>
           </li>
@@ -162,9 +162,8 @@
             <a href="#" aria-label="Twitter">
               <picture>
                 <source type="image/webp" srcset="img/twitter.webp">
-                  <img src="img/twitter.png" width="38" height="38" alt="Twitter">
+                <img src="img/twitter.png" width="38" height="38" alt="Twitter">
               </picture>
-
             </a>
           </li>
           <li class="socials__item">
@@ -173,7 +172,6 @@
                 <source type="image/webp" srcset="img/vimeo.webp">
                 <img src="img/vimeo.png" width="38" height="38" alt="Vimeo">
               </picture>
-
             </a>
           </li>
         </ul>
@@ -189,8 +187,14 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <input class="modal-input" type="text" placeholder="Ваше имя" required>
-            <input class="modal-input" type="password" placeholder="Ваш пароль" required>
+            <div>
+              <label class="modal-label" for="login">Ваш логин</label>
+              <input class="modal-input" type="text" placeholder="@ivanov_10" required id="login">
+            </div>
+            <div>
+              <label class="modal-label" for="enterpassword">Ваш пароль</label>
+              <input class="modal-input" type="password" placeholder="Не меньше 8-ми символов" pattern=".{8,}" id="enterpassword" required>
+            </div>
           </div>
           <div class="modal-footer">
             <button class="modal-btn" type="submit">Войти</button>
@@ -208,9 +212,18 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <input class="modal-input" type="text" placeholder="Ваше имя" required>
-            <input class="modal-input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-            <input class="modal-input" type="password" placeholder="Ваш пароль" required>
+            <div>
+              <label class="modal-label" for="nickname">Ваш Telegram ник</label>
+              <input class="modal-input" type="text" placeholder="@ivanov_10" required id="nickname">
+            </div>
+            <div>
+              <label class="modal-label" for="email">Ваш email</label>
+              <input class="modal-input" type="email" placeholder="ivanov@mail.ru" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+            </div>
+            <div>
+              <label class="modal-label" for="password">Ваш пароль</label>
+              <input class="modal-input" type="password" placeholder="Не меньше 8-ми символов" pattern=".{8,}" id="password" required>
+            </div>
           </div>
           <div class="modal-footer__wrapper">
             <div class="modal-checkbox">
