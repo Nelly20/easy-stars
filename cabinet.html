@@ -86,7 +86,6 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item cabinet-nav__list-link" href="#">Вебинарная комната</a>
               <a class="dropdown-item cabinet-nav__list-link" href="#">Контроль качества</a>
-              <a class="dropdown-item cabinet-nav__list-link" href="edit-profile.html">Редактировать профиль</a>
             </div>
           </li>
         </ul>
@@ -94,10 +93,16 @@
       <section class="personal-info container">
         <div class="personal-info__wrapper">
           <div class="personal-info-photo__wrapper">
-            <picture>
-              <source type="image/webp" srcset="img/user.webp">
-              <img src="img/user.jpg" alt="user">
-            </picture>
+            <div class="personal-info-photo">
+              <picture class="personal-info__img">
+                <source type="image/webp" srcset="img/user.webp">
+                <img src="img/user.jpg" alt="user">
+              </picture>
+              <div class="personal-info__photo-input personal-info__photo-input--cabinet">
+                Загрузить фото<input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg">
+              </div>
+            </div>
+
             <h3 class="personal-info__header">Алена Миронова</h3>
           </div>
           <div class="personal-info__text">
@@ -113,6 +118,7 @@
             <p class="personal-info__stars">Всего звезд:<br><span>10</span></p>
             <p class="personal-info__partners">Всего партнеров:<br><span>14</span></p>
           </div>
+          <a class="edit-profile-link" href="edit-profile.html">Редактировать профиль</a>
         </div>
         <div class="partners-number">
           <h3 class="partners-number__header">Количество партнеров:</h3>

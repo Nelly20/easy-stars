@@ -86,7 +86,6 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item cabinet-nav__list-link" href="#">Вебинарная комната</a>
               <a class="dropdown-item cabinet-nav__list-link" href="#">Контроль качества</a>
-              <a class="dropdown-item cabinet-nav__list-link">Редактировать профиль</a>
             </div>
           </li>
         </ul>
@@ -96,8 +95,14 @@
           <div>
             <form method="post" class="personal-info__form">
               <p class="personal-info__photo-text">Загрузите ваше фото</p>
-              <div class="personal-info__photo-input">
-                Загрузить фото<input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg">
+              <div class="personal-info-photo">
+                <picture class="personal-info__img">
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img src="img/user.jpg" alt="user">
+                </picture>
+                <div class="personal-info__photo-input personal-info__photo-input--cabinet">
+                  Загрузить фото<input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg">
+                </div>
               </div>
               <input class="personal-info__photo-btn" type="submit" value="Сохранить">
             </form>
