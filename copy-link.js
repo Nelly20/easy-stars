@@ -1,1 +1,0 @@
-function myFunction(){var e=document.getElementById("myInput");e.select(),document.execCommand("copy"),alert("Copied the text: "+e.value)}function outFunc(){document.getElementById("myTooltip").innerHTML="Copy to clipboard"}jQuery(document).ready(function(){jQuery(".scrollbar-inner").scrollbar()});

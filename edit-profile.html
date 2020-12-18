@@ -46,7 +46,7 @@
             </ul>
             <ul class="user-nav">
               <li class="user-nav__item">
-                <a class="user-nav__link user-nav__link--active user-nav__link--cabinet">Мой кабинет</a>
+                <a href="cabinet.html" class="user-nav__link user-nav__link--active user-nav__link--cabinet">Мой кабинет</a>
               </li>
             </ul>
           </div>
@@ -126,83 +126,48 @@
           <div class="edit-profile">
             <ul class="edit-profile__list">
               <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
+                <p class="edit-profile__header">Ваше имя:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">Марина</p>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваша фамилия:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">Иванова</p>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваше отчество:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">Ивановна</p>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш телеграм:
                 </p><p>
                 </p><div class="edit-profile__item--wrapper">
                   <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#nick">Изменить</a>
                 </div>
               </li>
               <li class="edit-profile__item">
                 <p class="edit-profile__header">Ваш пароль:
                 </p><p>
                 </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
+                  <p class="edit-profile__text">14dg6ac8</p>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#password">Изменить</a>
                 </div>
               </li>
               <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
+                <p class="edit-profile__header">Ваша почта:
                 </p><p>
                 </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
-                </div>
-              </li>
-              <li class="edit-profile__item">
-                <p class="edit-profile__header">Ваш логин:
-                </p><p>
-                </p><div class="edit-profile__item--wrapper">
-                  <p class="edit-profile__text">@anton_24</p>
-                  <a href="#" class="edit-profile__link">Изменить</a>
+                  <p class="edit-profile__text">ivanov@mail.com</p>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#email">Изменить</a>
                 </div>
               </li>
             </ul>
@@ -241,6 +206,67 @@
         <p class="copyright">©Все права защищены, 2020</p>
       </div>
     </footer>
-    <script src="copy-link.js"></script>
+    <!-- Телеграм -->
+    <div class="modal fade" id="nick" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="nickLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nickLabel">Изменение телеграм ника</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newnick">Новый ник</label>
+              <input class="modal-input" type="text" placeholder="@ivanov_10" required id="newnick">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Пароль -->
+    <div class="modal fade" id="password" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="passwordLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="passwordLabel">Изменение пароля</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newpassword">Новый пароль</label>
+              <input class="modal-input" type="password" placeholder="Минимум 8 символов" required id="newpassword" pattern=".{8,}">
+              <label class="modal-label" for="newpassword2">Пароль еще раз</label>
+              <input class="modal-input" type="password" placeholder="Повторите пароль" required id="newpassword2" pattern=".{8,}">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Почта -->
+    <div class="modal fade" id="email" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="emailLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emailLabel">Изменение адреса</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newemail">Новый e-mail</label>
+              <input class="modal-input" type="email" placeholder="ivanov@mail.com" required id="newemail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
