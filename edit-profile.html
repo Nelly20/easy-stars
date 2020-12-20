@@ -96,7 +96,7 @@
             <p class="personal-info__photo-text">Загрузите ваше фото</p>
             <form method="post" class="personal-info__form">
               <div class="personal-info-photo">
-                <picture class="personal-info__img">
+                <picture class="personal-info__img personal-info__img--edit">
                   <source type="image/webp" srcset="img/user.webp">
                   <img src="img/user.jpg" alt="user">
                 </picture>
@@ -104,7 +104,11 @@
                   Загрузить фото<input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg">
                 </div>
               </div>
-              <input class="personal-info__photo-btn" type="submit" value="Сохранить">
+              <div>
+                <input class="personal-info__photo-btn" type="submit" value="Сохранить">
+                <p class="personal-info__photo-subtitle">*Картинки JPG или PNG не более 2Мб</p>
+                <p class="personal-info__photo-subtitle--error visually-hidden">*Ваша картинка больше 2Мб</p>
+              </div>
             </form>
             <h3 class="personal-info__header personal-info__header--edit">Алена Миронова</h3>
           </div>
@@ -168,6 +172,30 @@
                 </p><div class="edit-profile__item--wrapper">
                   <p class="edit-profile__text">ivanov@mail.com</p>
                   <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#email">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш Whatsapp:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">ivanov</p>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#watsapp">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш VK:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">ivanov</p>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#vk">Изменить</a>
+                </div>
+              </li>
+              <li class="edit-profile__item">
+                <p class="edit-profile__header">Ваш Instagram:
+                </p><p>
+                </p><div class="edit-profile__item--wrapper">
+                  <p class="edit-profile__text">ivanov__23</p>
+                  <a href="#" class="edit-profile__link" data-toggle="modal" data-target="#insta">Изменить</a>
                 </div>
               </li>
             </ul>
@@ -236,6 +264,8 @@
           </div>
           <div class="modal-body">
             <div>
+              <label class="modal-label" for="oldpassword">Старый пароль</label>
+              <input class="modal-input" type="password" placeholder="Введите старый пароль" required id="oldpassword" pattern=".{8,}">
               <label class="modal-label" for="newpassword">Новый пароль</label>
               <input class="modal-input" type="password" placeholder="Минимум 8 символов" required id="newpassword" pattern=".{8,}">
               <label class="modal-label" for="newpassword2">Пароль еще раз</label>
@@ -243,7 +273,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button class="modal-btn" type="submit">Сохранить</button>
+            <input class="modal-btn" type="submit" id="submit_button" onclick="return validateForm()" value="Сохранить">
           </div>
         </form>
       </div>
@@ -268,5 +298,66 @@
         </form>
       </div>
     </div>
+    <!-- Watsapp -->
+    <div class="modal fade" id="watsapp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="watsappLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="watsappLabel">Изменение Whatsapp</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newwatsapp">Новый Watsapp</label>
+              <input class="modal-input" type="text" placeholder="ivanov" required id="newwatsapp">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Vk -->
+    <div class="modal fade" id="vk" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="vkLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vkLabel">Изменение VK</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newvk">Новый VK</label>
+              <input class="modal-input" type="text" placeholder="ivanov" required id="newvk">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Insta -->
+    <div class="modal fade" id="insta" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="instaLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="instaLabel">Изменение Instagram</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="modal-label" for="newinsta">Новый Instagram</label>
+              <input class="modal-input" type="text" placeholder="ivanov" required id="newinsta">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="copy-link.js"></script>
   </body>
 </html>

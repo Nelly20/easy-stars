@@ -17,6 +17,17 @@ function outFunc() {
   tooltip.innerHTML = "Copy to clipboard";
 }
 
-jQuery(document).ready(function(){
-    jQuery('.scrollbar-inner').scrollbar();
-});
+function validateForm () {
+    // проверяем пароли
+    // выбираем элементы
+    var password1 = document.getElementById('newpassword');
+    var password2 = document.getElementById('newpassword2');
+    // сравниваем написанное, если не равно, то:
+    if (password1.value !== password2.value) {
+        // сообщаем пользователю, можно сделать как угодно
+        alert('Проверьте пароли!');
+        // сообщаем браузеру, что не надо обрабатывать нажатие кнопки
+        // как обычно, т. е. не надо отправлять форму
+        return false;
+    }
+}

@@ -178,8 +178,10 @@
               <input class="modal-input" type="email" placeholder="ivanov@mail.ru" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
             </div>
             <div>
-              <label class="modal-label" for="password">Ваш пароль</label>
-              <input class="modal-input" type="password" placeholder="Не меньше 8-ми символов" pattern=".{8,}" id="password" required>
+              <label class="modal-label" for="newpassword">Ваш пароль</label>
+              <input class="modal-input" type="password" placeholder="Минимум 8 символов" required id="newpassword" pattern=".{8,}">
+              <label class="modal-label" for="newpassword2">Пароль еще раз</label>
+              <input class="modal-input" type="password" placeholder="Повторите пароль" required id="newpassword2" pattern=".{8,}">
             </div>
           </div>
           <div class="modal-footer__wrapper">
@@ -187,10 +189,11 @@
               <input class="modal-input-checkbox" type="checkbox" id="agree" required>
               <label class="modal-label" for="agree">Я согласен с условиями</label>
             </div>
-            <button class="modal-btn" type="submit">Готово</button>
+            <input class="modal-btn" type="submit" id="submit_button" onclick="return validateForm()" value="Сохранить">
           </div>
         </form>
       </div>
     </div>
+    <script src="copy-link.js"></script>
   </body>
 </html>
