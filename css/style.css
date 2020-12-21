@@ -2272,3 +2272,73 @@ input[type="file"] {
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: 350px 1fr; }
+
+.account-replenishment {
+  margin-top: 50px;
+  margin-bottom: 80px; }
+
+.account-replenishment__title {
+  font-size: 30px; }
+
+.account__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  margin-top: 40px; }
+
+.account__list-item {
+  text-align: center;
+  background-color: #eae8e8;
+  border-radius: 20px;
+  padding: 40px; }
+  .account__list-item:first-child {
+    background: linear-gradient(180deg, #7695FF 0%, #8342F7 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF); }
+  .account__list-item:nth-child(2) {
+    background: linear-gradient(180deg, #FBA3A0 0%, #FC5B89 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF); }
+  .account__list-item:nth-child(3) {
+    background: linear-gradient(180deg, #FFBC79 0%, #FF7F43 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF); }
+  .account__list-item:nth-child(4) {
+    background: linear-gradient(180deg, #5C84FF 0%, #1551FD 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF); }
+  .account__list-item:nth-child(3) .account__list-balance,
+  .account__list-item:nth-child(4) .account__list-balance {
+    color: #343333; }
+
+.account__list-balance {
+  font-size: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff; }
+  .account__list-balance span {
+    font-size: 20px;
+    font-weight: 600; }
+
+.account__list-link {
+  display: block;
+  margin-top: 30px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 25px;
+  padding-left: 30px;
+  background-image: url("../img/plus.svg");
+  background-position: 25px center;
+  background-repeat: no-repeat;
+  background-size: 12px; }
+  .account__list-link:hover {
+    color: #ffffff;
+    opacity: 0.8; }
+  .account__list-link:focus {
+    outline: none;
+    opacity: 0.8; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
