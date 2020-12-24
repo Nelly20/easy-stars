@@ -2066,7 +2066,8 @@ input[type="file"] {
 .chat__list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  width: 350px; }
 
 .chat__list-item {
   display: grid;
@@ -2131,6 +2132,7 @@ input[type="file"] {
   .chat__list-item {
     justify-content: flex-start; }
     .chat__list-item textarea {
+      display: block;
       width: 700px;
       padding: 20px; }
   .chat__list-item-wrapper,
@@ -2142,6 +2144,16 @@ input[type="file"] {
     width: 520px;
     padding: 20px; } }
 
+@media screen and (max-width: 575px) {
+  .chat__list-item textarea {
+    width: 550px;
+    padding: 20px; } }
+
+@media screen and (max-width: 567px) {
+  .chat__list-item textarea {
+    width: 900%;
+    padding: 20px; } }
+
 @media screen and (max-width: 500px) {
   .chat__list-item-wrapper,
   .chat__list-item-text {
@@ -2149,15 +2161,8 @@ input[type="file"] {
   .chat {
     padding: 20px;
     padding-right: 40px; }
-  .chat__list-item textarea {
-    width: 400px;
-    padding: 20px; }
   .chat__list-item-header {
     font-size: 14px; } }
-
-@media screen and (max-width: 430px) {
-  .chat__list-item textarea {
-    width: 300px; } }
 
 @media screen and (max-width: 350px) {
   .chat__list-item-wrapper,
@@ -2171,6 +2176,10 @@ input[type="file"] {
     width: 300px;
     padding: 20px; } }
 
+.personal-info--edit {
+  display: grid;
+  grid-template-columns: 350px 1fr; }
+
 .edit-profile {
   margin-top: 50px;
   padding: 30px 50px;
@@ -2183,13 +2192,14 @@ input[type="file"] {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-column-gap: 120px;
+  grid-column-gap: 100px;
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr; }
 
 .edit-profile__item {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: flex-start; }
 
 .edit-profile__header {
   margin-right: 30px;
@@ -2221,6 +2231,25 @@ input[type="file"] {
   .edit-profile__link:focus {
     outline: none;
     opacity: 0.8; }
+
+@media screen and (max-width: 1200px) {
+  .edit-profile__list {
+    grid-column-gap: 80px; } }
+
+@media screen and (max-width: 991px) {
+  .personal-info--edit {
+    grid-template-columns: 1fr; }
+  .edit-profile__list {
+    padding: 0; } }
+
+@media screen and (max-width: 767px) {
+  .personal-info--edit {
+    grid-template-columns: 1fr; }
+  .edit-profile {
+    margin-top: 30px; }
+  .edit-profile__list {
+    grid-template-columns: 1fr;
+    padding: 0; } }
 
 .easyoffice-sections {
   margin-top: 50px; }
@@ -2320,9 +2349,8 @@ input[type="file"] {
   grid-column-gap: 100px;
   grid-template-columns: 350px 700px; }
 
-.graphic-list {
-  width: 100%;
-  margin-top: 40px; }
+.carousel {
+  margin-top: 30px; }
 
 .carousel-item {
   display: block;
@@ -2330,25 +2358,6 @@ input[type="file"] {
 
 .graphic-list__header {
   font-size: 20px; }
-
-.next-icon--office {
-  right: 170px; }
-
-.chart-text {
-  transform: translateY(0.25em); }
-
-.chart-number {
-  font-size: 8px;
-  line-height: 1;
-  font-family: "Oswald", "Arial", sans-serif;
-  transform: translateY(-0.25em);
-  text-anchor: middle; }
-
-.chart-label {
-  font-size: 4px;
-  text-transform: uppercase;
-  transform: translateY(0.7em);
-  text-anchor: middle; }
 
 .graphic-list__data {
   margin: 0;
@@ -2362,6 +2371,16 @@ input[type="file"] {
   font-family: "Oswald", "Arial", sans-serif; }
   .graphic-list__data-item span {
     font-family: "Calibri", "Arial", sans-serif; }
+
+.prev-icon--office {
+  top: 40%; }
+
+.next-icon--office {
+  top: 40%; }
+
+.graphic-list {
+  display: block;
+  margin: 0 auto; }
 
 .graphic-list__data-item--usd {
   position: relative; }
@@ -2421,10 +2440,22 @@ input[type="file"] {
   .prev-icon--office {
     top: 40%; }
   .next-icon--office {
-    right: 120px;
     top: 40%; }
   .graphic-list {
     margin-top: 10px; } }
+
+.daily-sales__header {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.daily-sales--wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px; }
+
+.year-sales {
+  margin: 70px 0; }
 
 .account-replenishment {
   margin-top: 50px;
@@ -2515,8 +2546,7 @@ input[type="number"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 40px;
-    flex-wrap: wrap; }
+    margin-top: 40px; }
   .account__list-item {
     display: flex;
     flex-direction: column;

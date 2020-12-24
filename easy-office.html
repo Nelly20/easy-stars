@@ -12,6 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
       new WOW().init();
     </script>
@@ -215,78 +216,15 @@
             <ul class="carousel-inner graphic-list">
               <li class="carousel-item active">
                 <p class="graphic-list__header">Доход за декабрь</p>
-                <svg width="70%" height="70%" viewBox="0 0 42 42" class="donut">
-                  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffaf36" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fc5b89" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#8342f7" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffba77" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="65"></circle>
-                  <g class="chart-text">
-                    <text x="50%" y="50%" class="chart-number">
-                      10 000
-                    </text>
-                    <text x="50%" y="50%" class="chart-label">
-                      RUB
-                    </text>
-                  </g>
-                </svg>
-                <ul class="graphic-list__data">
-                  <li class="graphic-list__data-item graphic-list__data-item--usd">10 <span>USD</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--rub">10 <span>RUB</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--top">10 <span>Top Coin</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--lead">10 <span>Lead Coin</span></li>
-                </ul>
+                <canvas id="myChart1"></canvas>
               </li>
               <li class="carousel-item">
                 <p class="graphic-list__header">Доход за январь</p>
-                <svg width="70%" height="70%" viewBox="0 0 42 42" class="donut">
-                  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffaf36" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fc5b89" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#8342f7" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffba77" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="65"></circle>
-                  <g class="chart-text">
-                    <text x="50%" y="50%" class="chart-number">
-                      20 000
-                    </text>
-                    <text x="50%" y="50%" class="chart-label">
-                      RUB
-                    </text>
-                  </g>
-                </svg>
-                <ul class="graphic-list__data">
-                  <li class="graphic-list__data-item graphic-list__data-item--usd">10 <span>USD</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--rub">10 <span>RUB</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--top">10 <span>Top Coin</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--lead">10 <span>Lead Coin</span></li>
-                </ul>
+                <canvas id="myChart2"></canvas>
               </li>
               <li class="carousel-item">
                 <p class="graphic-list__header">Ожидаемый доход за февраль</p>
-                <svg width="70%" height="70%" viewBox="0 0 42 42" class="donut">
-                  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-                  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffaf36" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fc5b89" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#8342f7" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ffba77" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="65"></circle>
-                  <g class="chart-text">
-                    <text x="50%" y="50%" class="chart-number">
-                      2000
-                    </text>
-                    <text x="50%" y="50%" class="chart-label">
-                      RUB
-                    </text>
-                  </g>
-                </svg>
-                <ul class="graphic-list__data">
-                  <li class="graphic-list__data-item graphic-list__data-item--usd">10 <span>USD</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--rub">10 <span>RUB</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--top">10 <span>Top Coin</span></li>
-                  <li class="graphic-list__data-item graphic-list__data-item--lead">10 <span>Lead Coin</span></li>
-                </ul>
+                <canvas id="myChart3"></canvas>
               </li>
             </ul>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -296,6 +234,20 @@
             <span class="next-icon next-icon--office" aria-hidden="true"></span>
             </a>
           </div>
+        </div>
+      </section>
+      <section class="daily-sales container">
+        <div class="daily-sales--wrapper">
+          <div>
+            <p class="daily-sales__header">Доход за день</p>
+            <canvas id="myChart4"></canvas>
+            </div>
+        </div>
+      </section>
+
+      <section class="year-sales container">
+        <div class="year-sales--wrapper">
+            <canvas id="myChart5"></canvas>
         </div>
       </section>
     </main>
@@ -331,5 +283,7 @@
       </div>
     </footer>
     <script src="js/copy-link.js"></script>
+    <script src="js/graphic.js"></script>
+
   </body>
 </html>
