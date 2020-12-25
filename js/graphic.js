@@ -1,16 +1,16 @@
 var ctx = document.getElementById('myChart1').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'doughnut',
+    type: 'line',
 
     // The data for our dataset
     data: {
-        labels: ['USD', 'RUB', 'Top Coin'],
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
         datasets: [{
             label: 'Доход за сегодня',
-            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)'],
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
             borderColor: 'rgb(255, 255, 255)',
-            data: [80, 10, 5]
+            data: [80, 60, 45, 90]
         }]
     },
 
@@ -21,16 +21,16 @@ var chart = new Chart(ctx, {
 var ctx = document.getElementById('myChart2').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'doughnut',
+    type: 'line',
 
     // The data for our dataset
     data: {
-        labels: ['USD', 'RUB', 'Top Coin'],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
         datasets: [{
-            label: 'Доход за сегодня',
-            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)'],
+            label: 'Доход за декабрь',
+            backgroundColor: ['rgba(130, 76, 248, 1)', 'rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)'],
             borderColor: 'rgb(255, 255, 255)',
-            data: [80, 10, 5]
+            data: [8000, 6000, 4500, 9000, 6700, 9800, 4300, 2600]
         }]
     },
 
@@ -45,12 +45,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['USD', 'RUB', 'Top Coin'],
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
         datasets: [{
             label: 'Доход за сегодня',
-            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)'],
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
             borderColor: 'rgb(255, 255, 255)',
-            data: [80, 10, 5]
+            data: [80, 50, 40, 75]
         }]
     },
 
@@ -65,12 +65,12 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['USD', 'RUB', 'Top Coin'],
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
         datasets: [{
             label: 'Доход за сегодня',
-            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(255, 129, 69, 1)'],
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
             borderColor: 'rgb(255, 255, 255)',
-            data: [80, 10, 5]
+            data: [80, 50, 40, 75]
         }]
     },
 
@@ -78,19 +78,20 @@ var chart = new Chart(ctx, {
     options: {}
 });
 
+
 var ctx = document.getElementById('myChart5').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'line',
+    type: 'doughnut',
 
     // The data for our dataset
     data: {
-        labels: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
         datasets: [{
-            label: 'Доход за год',
-            backgroundColor: 'rgba(255, 175, 54, 1)',
-            borderColor: 'rgba(255, 175, 54, 1)',
-            data: [0, 10, 5, 2, 20, 30, 45]
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [80, 50, 40, 75]
         }]
     },
 

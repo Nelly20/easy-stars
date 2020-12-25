@@ -2346,8 +2346,8 @@ input[type="file"] {
   display: grid;
   margin-top: 80px;
   margin-bottom: 80px;
-  grid-column-gap: 100px;
-  grid-template-columns: 350px 700px; }
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 1fr; }
 
 .carousel {
   margin-top: 30px; }
@@ -2357,7 +2357,8 @@ input[type="file"] {
   margin: 0 auto; }
 
 .graphic-list__header {
-  font-size: 20px; }
+  font-size: 20px;
+  margin-bottom: 50px; }
 
 .graphic-list__data {
   margin: 0;
@@ -2445,17 +2446,20 @@ input[type="file"] {
     margin-top: 10px; } }
 
 .daily-sales__header {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center; }
 
-.daily-sales--wrapper {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 20px; }
-
 .year-sales {
   margin: 70px 0; }
+
+.chat-easyoffice {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-column-gap: 50px; }
+
+.chat--easyoffice {
+  margin-bottom: 80px; }
 
 .account-replenishment {
   margin-top: 50px;

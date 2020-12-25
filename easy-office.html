@@ -57,7 +57,7 @@
     <main class="page-main content">
       <h1 class="visually-hidden">EasyStars</h1>
       <section class="cabinet-nav container">
-        <a href="cabinet.html" class="cabinet-nav__title">Личный кабинет</a>
+        <a href="cabinet.html" class="cabinet-nav__title"><h2>Личный кабинет</h2></a>
         <ul class="cabinet-nav__list">
           <li class="cabinet-nav__list-item">
             <a href="#" class="cabinet-nav__list-link">магазин</a>
@@ -146,110 +146,116 @@
         </ul>
       </section>
       <section class="easyoffice-graphic container">
+        <h2 class="visually-hidden">Доходы</h2>
         <div class="easyoffice-graphic--wrapper">
-          <div class="chat--easyoffice">
-            <h3 class="chat__title">онлайн чат</h3>
-            <div class="chat scrollbar-inner">
-              <ul class="chat__list" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-                <li class="chat__list-item">
-                  <picture class="chat__list-item-img">
-                    <source type="image/webp" srcset="img/user.webp">
-                    <img src="img/user.jpg" alt="user" width="100" height="100">
-                  </picture>
-                  <div>
-                    <div class="chat__list-item-wrapper">
-                      <h4 class="chat__list-item-header">АнтонИвановАнтонИвановАнтон</h4>
-                      <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
-                    </div>
-                    <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
-                  </div>
-                </li>
-                <li class="chat__list-item">
-                  <picture class="chat__list-item-img">
-                    <source type="image/webp" srcset="img/user.webp">
-                    <img src="img/user.jpg" alt="user" width="100" height="100">
-                  </picture>
-                  <div>
-                    <div class="chat__list-item-wrapper">
-                      <h4 class="chat__list-item-header">Антон Иванов</h4>
-                      <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
-                    </div>
-                    <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
-                  </div>
-                </li>
-                <li class="chat__list-item">
-                  <picture class="chat__list-item-img">
-                    <source type="image/webp" srcset="img/user.webp">
-                    <img src="img/user.jpg" alt="user" width="100" height="100">
-                  </picture>
-                  <div>
-                    <div class="chat__list-item-wrapper">
-                      <h4 class="chat__list-item-header">Антон Иванов</h4>
-                      <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
-                    </div>
-                    <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
-                  </div>
-                </li>
-                <li class="chat__list-item">
-                  <picture class="chat__list-item-img">
-                    <source type="image/webp" srcset="img/user.webp">
-                    <img src="img/user.jpg" alt="user" width="100" height="100">
-                  </picture>
-                  <div>
-                    <div class="chat__list-item-wrapper">
-                      <h4 class="chat__list-item-header">Антон Иванов</h4>
-                      <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
-                    </div>
-                    <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="chat__list-item chat__list-item--message">
-              <form method="post" class="chat__list-item-form">
-                <textarea placeholder="Введите текст сообщения"></textarea>
-                <button type="button" class="">Отправить</button>
-              </form>
+          <div class="daily-sales">
+            <div class="daily-sales--wrapper">
+              <div>
+                <p class="daily-sales__header">Ваш доход за день</p>
+                <canvas id="myChart1"></canvas>
+              </div>
             </div>
           </div>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-            <ul class="carousel-inner graphic-list">
-              <li class="carousel-item active">
-                <p class="graphic-list__header">Доход за декабрь</p>
-                <canvas id="myChart1"></canvas>
-              </li>
-              <li class="carousel-item">
-                <p class="graphic-list__header">Доход за январь</p>
-                <canvas id="myChart2"></canvas>
-              </li>
-              <li class="carousel-item">
-                <p class="graphic-list__header">Ожидаемый доход за февраль</p>
-                <canvas id="myChart3"></canvas>
-              </li>
-            </ul>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="prev-icon prev-icon--office" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="next-icon next-icon--office" aria-hidden="true"></span>
-            </a>
+          <div class="month-sales">
+            <div class="year-sales--wrapper">
+              <p class="daily-sales__header">Ваш доход за месяц</p>
+              <canvas id="myChart2"></canvas>
+            </div>
           </div>
         </div>
       </section>
-      <section class="daily-sales container">
-        <div class="daily-sales--wrapper">
-          <div>
-            <p class="daily-sales__header">Доход за день</p>
-            <canvas id="myChart4"></canvas>
-            </div>
+      <section class="container chat-easyoffice">
+        <div class="chat--easyoffice">
+          <h3 class="chat__title">онлайн чат</h3>
+          <div class="chat scrollbar-inner">
+            <ul class="chat__list" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <li class="chat__list-item">
+                <picture class="chat__list-item-img">
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img src="img/user.jpg" alt="user" width="100" height="100">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">АнтонИвановАнтонИвановАнтон</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+              <li class="chat__list-item">
+                <picture class="chat__list-item-img">
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img src="img/user.jpg" alt="user" width="100" height="100">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+              <li class="chat__list-item">
+                <picture class="chat__list-item-img">
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img src="img/user.jpg" alt="user" width="100" height="100">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+              <li class="chat__list-item">
+                <picture class="chat__list-item-img">
+                  <source type="image/webp" srcset="img/user.webp">
+                  <img src="img/user.jpg" alt="user" width="100" height="100">
+                </picture>
+                <div>
+                  <div class="chat__list-item-wrapper">
+                    <h4 class="chat__list-item-header">Антон Иванов</h4>
+                    <p class="chat__list-item-date">23 ноя 2020, 18:32</p>
+                  </div>
+                  <p class="chat__list-item-text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="chat__list-item chat__list-item--message">
+            <form method="post" class="chat__list-item-form">
+              <textarea placeholder="Введите текст сообщения"></textarea>
+              <button type="button" class="">Отправить</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <ul class="carousel-inner graphic-list">
+            <li class="carousel-item active">
+              <p class="graphic-list__header">Доход за декабрь</p>
+              <canvas id="myChart3"></canvas>
+            </li>
+            <li class="carousel-item">
+              <p class="graphic-list__header">Доход за январь</p>
+              <canvas id="myChart4"></canvas>
+            </li>
+            <li class="carousel-item">
+              <p class="graphic-list__header">Ожидаемый доход за февраль</p>
+              <canvas id="myChart5"></canvas>
+            </li>
+          </ul>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="prev-icon prev-icon--office" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="next-icon next-icon--office" aria-hidden="true"></span>
+          </a>
         </div>
       </section>
 
-      <section class="year-sales container">
-        <div class="year-sales--wrapper">
-            <canvas id="myChart5"></canvas>
-        </div>
-      </section>
+
     </main>
     <footer class="page-footer page-footer--marketing wow animate__animated animate__slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
       <div class="col-12 container footer">
@@ -284,6 +290,5 @@
     </footer>
     <script src="js/copy-link.js"></script>
     <script src="js/graphic.js"></script>
-
   </body>
 </html>
