@@ -14,7 +14,9 @@ var customTooltips = function(tooltip) {
 
 			if (tooltip.dataPoints.length > 0) {
 				tooltip.dataPoints.forEach(function(dataPoint) {
-					var content = [dataPoint.xLabel, dataPoint.yLabel].join(': ');
+					var currentcy = tooltip.body[dataPoint.datasetIndex].lines[0].split(':')[0];
+
+					var content = [dataPoint.xLabel, dataPoint.yLabel].join(': ') + ' ' + currentcy;
 					var $tooltip = $('#tooltip-' + dataPoint.datasetIndex);
 
 					$tooltip.html(content);
@@ -27,119 +29,6 @@ var customTooltips = function(tooltip) {
 			}
 		};
 		var color = Chart.helpers.color;
-		var lineChartData = {
-			labels: ['00.00', '01.00', '02.00', '03.00', '04.00', '05.00', '06.00', '07.00', '08.00', '09.00', '10.00', '11.00', '12.00', '13.00', '14.00', '15.00', '16.00', '17.00', '18.00', '19.00', '20.00', '21.00', '22.00', '23.00'],
-			datasets: [{
-				label: 'RUB',
-				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.red,
-				pointBackgroundColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-          randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			},
-      {
-				label: 'USD',
-				backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.orange,
-				pointBackgroundColor: window.chartColors.orange,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-          randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			},
-      {
-				label: 'Top Coin',
-				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.blue,
-				pointBackgroundColor: window.chartColors.blue,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-          randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			},
-      {
-				label: 'Lead Coin',
-				backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
-				borderColor: window.chartColors.yellow,
-				pointBackgroundColor: window.chartColors.yellow,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-          randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
-		};
-
-		window.onload = function() {
-			var chartEl = document.getElementById('chart1');
-			new Chart(chartEl, {
-				type: 'line',
-				data: lineChartData,
-				options: {
-					title: {
-						display: true,
-						text: ''
-					},
-					tooltips: {
-						enabled: false,
-						mode: 'index',
-						intersect: false,
-						custom: customTooltips
-					}
-				}
-			});
-		};
-
-
 
     var customTooltips_2 = function(tooltip) {
     			$(this._chart.canvas).css('cursor', 'pointer');
@@ -170,99 +59,210 @@ var customTooltips = function(tooltip) {
     			}
     		};
     		var color = Chart.helpers.color;
-    		var lineChartData = {
-    				labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
-    			datasets: [{
-    				label: 'RUB',
-    				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-    				borderColor: window.chartColors.red,
-    				pointBackgroundColor: window.chartColors.red,
-    				data: [
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-              randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor()
-    				]
-    			},
-          {
-    				label: 'USD',
-    				backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
-    				borderColor: window.chartColors.orange,
-    				pointBackgroundColor: window.chartColors.orange,
-    				data: [
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-              randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor()
-    				]
-    			},
-          {
-    				label: 'Top Coin',
-    				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-    				borderColor: window.chartColors.blue,
-    				pointBackgroundColor: window.chartColors.blue,
-    				data: [
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-              randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor()
-    				]
-    			},
-          {
-    				label: 'Lead Coin',
-    				backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
-    				borderColor: window.chartColors.yellow,
-    				pointBackgroundColor: window.chartColors.yellow,
-    				data: [
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-              randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor(),
-    					randomScalingFactor()
-    				]
-    			}]
-    		};
 
     		window.onload = function() {
+				var lineChartData = {
+					labels: ['00.00', '01.00', '02.00', '03.00', '04.00', '05.00', '06.00', '07.00', '08.00', '09.00', '10.00', '11.00', '12.00', '13.00', '14.00', '15.00', '16.00', '17.00', '18.00', '19.00', '20.00', '21.00', '22.00', '23.00'],
+					datasets: [{
+						label: 'RUB',
+						backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.red,
+						pointBackgroundColor: window.chartColors.red,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				  randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			  {
+						label: 'USD',
+						backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.orange,
+						pointBackgroundColor: window.chartColors.orange,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				  randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			  {
+						label: 'Top Coin',
+						backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.blue,
+						pointBackgroundColor: window.chartColors.blue,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				  randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			  {
+						label: 'Lead Coin',
+						backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.yellow,
+						pointBackgroundColor: window.chartColors.yellow,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				  randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					}]
+				};
+		
+				var chartEl = document.getElementById('chart1');
+				new Chart(chartEl, {
+					type: 'line',
+					data: lineChartData,
+					options: {
+						title: {
+							display: true,
+							text: ''
+						},
+						tooltips: {
+							enabled: false,
+							mode: 'index',
+							intersect: false,
+							custom: customTooltips
+						}
+					}
+				});
+
+				var lineChartData = {
+    				labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
+					datasets: [{
+						label: 'RUB',
+						backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.red,
+						pointBackgroundColor: window.chartColors.red,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			{
+						label: 'USD',
+						backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.orange,
+						pointBackgroundColor: window.chartColors.orange,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			{
+						label: 'Top Coin',
+						backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.blue,
+						pointBackgroundColor: window.chartColors.blue,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					},
+			{
+						label: 'Lead Coin',
+						backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+						borderColor: window.chartColors.yellow,
+						pointBackgroundColor: window.chartColors.yellow,
+						data: [
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+				randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor(),
+							randomScalingFactor()
+						]
+					}]
+				};
+
     			var chartEl = document.getElementById('chart2');
     			new Chart(chartEl, {
     				type: 'line',
