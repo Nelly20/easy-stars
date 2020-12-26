@@ -1,6 +1,3 @@
-body {
-  min-width: 320px; }
-
 * {
   box-sizing: border-box; }
 
@@ -718,8 +715,7 @@ a {
     grid-template-columns: 1fr; } }
 
 .partners {
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-top: 100px; }
 
 .partners__title {
   font-weight: 400;
@@ -2008,11 +2004,8 @@ input[type="file"] {
     grid-template-columns: 1fr; } }
 
 .personal-info-news {
-  display: grid;
   margin-top: 40px;
-  margin-bottom: 80px;
-  grid-gap: 30px;
-  grid-template-columns: 350px 1fr; }
+  margin-bottom: 80px; }
 
 .chat {
   position: relative;
@@ -2026,7 +2019,6 @@ input[type="file"] {
   border-radius: 20px; }
 
 .chat__list-item--message {
-  width: 100%;
   display: block; }
 
 ::-webkit-scrollbar {
@@ -2063,11 +2055,13 @@ input[type="file"] {
   color: #343333;
   text-transform: uppercase; }
 
+.chat__title--cabinet {
+  margin-top: 60px; }
+
 .chat__list {
   margin: 0;
   padding: 0;
-  list-style: none;
-  width: 350px; }
+  list-style: none; }
 
 .chat__list-item {
   display: grid;
@@ -2077,7 +2071,7 @@ input[type="file"] {
   .chat__list-item:last-child {
     margin-bottom: 0; }
   .chat__list-item textarea {
-    width: 350px;
+    width: 358px;
     min-height: 100px;
     padding-left: 10px;
     background-color: #ffffff;
@@ -2124,6 +2118,12 @@ input[type="file"] {
   margin-left: 0;
   font-size: 14px; }
 
+@media screen and (max-width: 1199px) {
+  .chat {
+    padding: 20px 10px; }
+  .chat__list-item textarea {
+    width: 300px; } }
+
 @media screen and (max-width: 991px) {
   .personal-info-news {
     grid-template-columns: 1fr; }
@@ -2151,8 +2151,12 @@ input[type="file"] {
 
 @media screen and (max-width: 567px) {
   .chat__list-item textarea {
-    width: 900%;
+    width: 500px;
     padding: 20px; } }
+
+@media screen and (max-width: 530px) {
+  .chat__list-item textarea {
+    width: 500px; } }
 
 @media screen and (max-width: 500px) {
   .chat__list-item-wrapper,
@@ -2346,8 +2350,8 @@ input[type="file"] {
   display: grid;
   margin-top: 80px;
   margin-bottom: 80px;
-  grid-column-gap: 50px;
-  grid-template-columns: 1fr 1fr; }
+  grid-row-gap: 80px;
+  grid-template-columns: 1fr; }
 
 .carousel {
   margin-top: 30px; }
@@ -2357,8 +2361,10 @@ input[type="file"] {
   margin: 0 auto; }
 
 .graphic-list__header {
-  font-size: 20px;
-  margin-bottom: 50px; }
+  font-size: 18px;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase; }
 
 .graphic-list__data {
   margin: 0;
@@ -2431,6 +2437,27 @@ input[type="file"] {
     background-color: #ffba77;
     border-radius: 100%; }
 
+canvas {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.chartjs-tooltip {
+  opacity: 1;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 3px;
+  transition: all .1s ease;
+  pointer-events: none;
+  transform: translate(-50%, 0);
+  padding: 4px; }
+
+.chartjs-tooltip-key {
+  display: inline-block;
+  width: 10px;
+  height: 10px; }
+
 @media screen and (max-width: 991px) {
   .easyoffice-graphic--wrapper {
     display: flex;
@@ -2448,17 +2475,13 @@ input[type="file"] {
 .daily-sales__header {
   font-size: 18px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
 
 .year-sales {
   margin: 70px 0; }
 
 .chat-easyoffice {
-  display: grid;
-  grid-template-columns: 350px 1fr;
-  grid-column-gap: 50px; }
-
-.chat--easyoffice {
   margin-bottom: 80px; }
 
 .account-replenishment {
