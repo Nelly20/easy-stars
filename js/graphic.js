@@ -152,7 +152,7 @@ var customTooltips = function(tooltip) {
 						]
 					}]
 				};
-		
+
 				var chartEl = document.getElementById('chart1');
 				new Chart(chartEl, {
 					type: 'line',
@@ -287,7 +287,7 @@ var customTooltips = function(tooltip) {
 
 
 
-var ctx = document.getElementById('myChart3').getContext('2d');
+var ctx = document.getElementById('circleJanuary').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'doughnut',
@@ -307,7 +307,28 @@ var chart = new Chart(ctx, {
     options: {}
 });
 
-var ctx = document.getElementById('myChart4').getContext('2d');
+var ctx = document.getElementById('circleFebruary').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [80, 50, 20, 35]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+var ctx = document.getElementById('circleMarch').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'doughnut',
@@ -327,8 +348,7 @@ var chart = new Chart(ctx, {
     options: {}
 });
 
-
-var ctx = document.getElementById('myChart5').getContext('2d');
+var ctx = document.getElementById('circleApril').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'doughnut',
@@ -341,6 +361,166 @@ var chart = new Chart(ctx, {
             backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
             borderColor: 'rgb(255, 255, 255)',
             data: [80, 50, 40, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleMay').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [50, 50, 60, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleJune').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [50, 50, 60, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleJuly').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [50, 50, 60, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleAugust').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [50, 50, 60, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleSeptember').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [50, 50, 60, 75]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleOctober').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [70, 20, 90, 35]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleNovember').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [70, 20, 90, 35]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+var ctx = document.getElementById('circleDecember').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['USD', 'RUB', 'Top Coin', 'Lead Coin'],
+        datasets: [{
+            label: 'Доход за сегодня',
+            backgroundColor: ['rgba(255, 175, 54, 1)', 'rgba(252, 97, 139, 1)', 'rgba(130, 76, 248, 1)', 'rgba(255, 129, 69, 1)'],
+            borderColor: 'rgb(255, 255, 255)',
+            data: [70, 20, 90, 35]
         }]
     },
 

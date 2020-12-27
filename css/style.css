@@ -2602,3 +2602,159 @@ input[type="number"] {
 @media screen and (max-width: 390px) {
   .account__list-link {
     background-position: 30px center; } }
+
+    .shop__list {
+      list-style: none;
+
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .shop__list-item {
+      width: 30%;
+      padding: 30px;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .shop__list-item:nth-child(2) {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .shop__list-item-header {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      padding-bottom: 50px;
+    }
+
+    .shop__list-item-header--easystars {
+      background-image: url("../img/yellow-star.svg");
+    }
+
+    .shop__list-item-header--vk {
+      background-image: url("../img/vk-star.svg");
+    }
+
+    .shop__list-item-header--insta {
+      background-image: url("../img/insta-star.svg");
+    }
+
+    .shop__list-item-header--skype {
+      background-image: url("../img/skype-star.svg");
+    }
+
+    .shop__list-item-header--tele {
+      background-image: url("../img/tele-star.svg");
+    }
+
+    .shop__list-item-price {
+      font-size: 22px;
+      font-family: "Oswald", "Arial", sans-serif;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .shop__list-item-btn {
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      background: linear-gradient(180deg, #FFAF36 0%, #D5830A 100%),
+    linear-gradient(180deg, #FFAF36 0%, rgba(255, 175, 54, 0) 100%);
+      padding: 10px 20px;
+      border-radius: 40px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .shop__list-item-btn:hover {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    .shop__list-item-btn:focus {
+      outline: none;
+      opacity: 0.8;
+    }
+
+    .shop-easystars {
+      margin-top: 50px;
+    }
+
+    .shop-easystars__list {
+      list-style: none;
+
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .shop-easystars__list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 45%;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 40px;
+      align-items: center;
+    }
+
+    .shop-easystars__list-item-header {
+      font-size: 24px;
+      text-align: center;
+      font-weight: 500;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      padding-bottom: 50px;
+    }
+
+    .shop-easystars__list-item-price {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 20px;
+      font-family: "Oswald", "Arial", sans-serif;
+    }
+
+    .functions-list {
+      list-style: none;
+      font-size: 18px;
+      color: #343333;
+      margin-bottom: 30px;
+    }
+
+    .shop-nav {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .shop-nav__item-btn {
+      text-decoration: none;
+      background-color: #5F6164;
+      padding: 8px 20px;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+    .shop-nav__item-btn:hover {
+      opacity: 0.8;
+      color: #fff;
+    }
