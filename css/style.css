@@ -2715,13 +2715,19 @@ input[type="number"] {
       align-items: center;
     }
 
+    .shop-easystars__list-item img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0;
+    }
+
     .shop-easystars__list-item-header {
       font-size: 24px;
       text-align: center;
       font-weight: 500;
       background-repeat: no-repeat;
       background-position: center bottom;
-      padding-bottom: 50px;
+      margin-bottom: 20px;
     }
 
     .shop-easystars__list-item-price {
