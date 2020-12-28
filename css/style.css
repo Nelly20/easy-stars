@@ -2610,7 +2610,6 @@ input[type="number"] {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
-      align-items: center;
     }
 
     .shop__list-item {
@@ -2661,7 +2660,7 @@ input[type="number"] {
       font-size: 22px;
       font-family: "Oswald", "Arial", sans-serif;
       margin-top: 15px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
 
     .shop__list-item-btn {
@@ -2677,6 +2676,7 @@ input[type="number"] {
       text-transform: uppercase;
       font-weight: 500;
       text-decoration: none;
+      margin-top: 20px;
     }
 
     .shop__list-item-btn:hover {
