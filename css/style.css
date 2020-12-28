@@ -2634,7 +2634,7 @@ input[type="number"] {
       margin: 0;
       background-repeat: no-repeat;
       background-position: bottom center;
-      padding-bottom: 50px;
+      margin-bottom: 10px;
     }
 
     .shop__list-item-header--easystars {
