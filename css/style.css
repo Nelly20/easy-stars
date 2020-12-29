@@ -2256,7 +2256,8 @@ input[type="file"] {
     padding: 0; } }
 
 .easyoffice-sections {
-  margin-top: 50px; }
+  margin-top: 50px;
+margin-bottom: 50px;}
 
 .easyoffice-sections__list {
   margin: 0;
@@ -2275,6 +2276,7 @@ input[type="file"] {
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
+  margin-bottom: 50px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -2349,6 +2351,7 @@ input[type="file"] {
 .easyoffice-graphic--wrapper {
   display: grid;
   margin-top: 80px;
+  padding-top: 50px;
   margin-bottom: 80px;
   grid-row-gap: 80px;
   grid-template-columns: 1fr; }
@@ -2472,11 +2475,15 @@ canvas {
   .graphic-list {
     margin-top: 10px; } }
 
+.daily-sales {
+  margin-top: 50px;
+}
+
 .daily-sales__header {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;}
 
 .year-sales {
   margin: 70px 0; }
