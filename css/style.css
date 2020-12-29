@@ -2627,6 +2627,28 @@ input[type="number"] {
       box-shadow: none;
     }
 
+    @media screen and (max-width: 991px) {
+      .shop__list-item  {
+        width: 48%;
+      }
+        .shop__list-item:nth-child(2) {
+          order: -1;
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .shop__list {
+          flex-direction: column;
+        }
+
+        .shop__list-item  {
+          width: 100%;
+        }
+        }
+
+
+
     .shop__list-item-header {
       font-size: 22px;
       font-weight: 500;
@@ -2715,6 +2737,16 @@ input[type="number"] {
       align-items: center;
     }
 
+    @media screen and (max-width: 991px) {
+        .shop-easystars__list-item {
+          width: 100%;
+        }
+
+        .shop-easystars__list  {
+          flex-direction: column;
+        }
+      }
+
     .shop-easystars__list-item img {
       display: block;
       margin: 0 auto;
@@ -2745,11 +2777,14 @@ input[type="number"] {
     }
 
     .shop-nav {
-      list-style: none;
+      height: 50px;
+      padding: 20px;
+    }
+
+    .carousel-item {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      justify-content: space-around;
+      align-items: center;
     }
 
     .shop-nav__item-btn {
@@ -2758,7 +2793,55 @@ input[type="number"] {
       padding: 8px 20px;
       border-radius: 20px;
       color: #fff;
+      margin-left: 110px;
     }
+
+    .carousel--mobile {
+      display: none;
+    }
+
+      @media screen and (max-width: 1199px) {
+        .shop-nav__item-btn {
+          margin-left: 80px;
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        .shop-nav__item-btn {
+          margin-left: 30px;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .shop-nav__item-btn {
+          display: inline-block;
+          margin-left: 70px;
+          margin-bottom: 20px;
+        }
+
+        .shop-nav {
+          height: 120px;
+          padding: 20px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .shop-nav__item-btn {
+          margin-left: 50px;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        .shop-nav__item-btn {
+          margin-left: 30px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .shop-nav__item-btn {
+          margin-left: 20px;
+        }
+      }
 
     .shop-nav__item-btn:hover {
       opacity: 0.8;
