@@ -113,8 +113,8 @@
               </ul>
             </div>
             <div class="shop-easystars__list-btn">
-              <a href="#" class="shop__list-item-btn-main">купить звезду</a>
-              <a href="#" class="shop__list-item-btn">купить продукт</a>
+              <a href="#" class="shop__list-item-btn-main" data-toggle="modal" data-target="#buy-star">купить звезду</a>
+              <a href="#" class="shop__list-item-btn" data-toggle="modal" data-target="#buy-product">купить продукт</a>
             </div>
           </li>
           <li class="shop-easystars__list-item">
@@ -143,24 +143,28 @@
               </ul>
             </div>
             <div class="shop-easystars__list-btn">
-              <a href="#" class="shop__list-item-btn-main">купить звезду</a>
-              <a href="#" class="shop__list-item-btn">купить продукт</a>
+              <a href="#" class="shop__list-item-btn-main" data-toggle="modal" data-target="#buy-star">купить звезду</a>
+              <a href="#" class="shop__list-item-btn" data-toggle="modal" data-target="#buy-product">купить продукт</a>
             </div>
           </li>
         </ul>
         <div id="carouselExampleControls" class="carousel carousel--desktop slide" data-bs-ride="carousel">
           <ul class="carousel-inner shop-nav">
-            <li class="carousel-item active shop-nav__item">
+            <li class="carousel-item active">
+              <div class="shop-nav__item">
               <a class="shop-nav__item-btn" href="shop-easystars.html">EasyStars</a>
               <a class="shop-nav__item-btn" href="shop-easystars.html">EasyBusinessesSoft</a>
               <a class="shop-nav__item-btn" href="shop-vklead.html">VkLead</a>
               <a class="shop-nav__item-btn" href="shop-vklead.html">VkLead Business</a>
+            </div>
             </li>
-            <li class="carousel-item shop-nav__item">
-              <a class="shop-nav__item-btn" href="shop-instalead.html">InstaLead</a>
-              <a class="shop-nav__item-btn" href="shop-instalead.html">InstaLead Business</a>
-              <a class="shop-nav__item-btn" href="shop-telelead.html">TeleLead</a>
-              <a class="shop-nav__item-btn" href="shop-telelead.html">TeleLead Business</a>
+            <li class="carousel-item">
+              <div class="shop-nav__item">
+                <a class="shop-nav__item-btn" href="shop-instalead.html">InstaLead</a>
+                <a class="shop-nav__item-btn" href="shop-instalead.html">InstaLead Business</a>
+                <a class="shop-nav__item-btn" href="shop-telelead.html">TeleLead</a>
+                <a class="shop-nav__item-btn" href="shop-telelead.html">TeleLead Business</a>
+              </div>
             </li>
           </ul>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -203,6 +207,56 @@
         <p class="copyright">©Все права защищены, 2020</p>
       </div>
     </footer>
+    <!-- Купить звезду -->
+    <div class="modal fade" id="buy-star" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="enterLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enterLabel">Купить звезду</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h6 class="currency-label">Выберите валюту</h6>
+              <select class="custom-select">
+                <option selected>1 000RUB</option>
+                <option value="1">20$</option>
+                <option value="2">800TopCoin</option>
+                <option value="3">450LeadCoin</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Оплатить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Купить продукт -->
+    <div class="modal fade" id="buy-product" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="enterLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form method="post" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enterLabel">Купить продукт</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h6 class="currency-label">Выберите валюту</h6>
+              <select class="custom-select">
+                <option selected>1 000RUB</option>
+                <option value="1">20$</option>
+                <option value="2">800TopCoin</option>
+                <option value="3">450LeadCoin</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="modal-btn" type="submit">Оплатить</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="js/copy-link.js"></script>
     <script src="js/sticky-footer.js"></script>
   </body>

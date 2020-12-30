@@ -2630,6 +2630,9 @@ input[type="number"] {
       border-radius: 20px;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .shop__list-item:nth-child(2) {
@@ -2650,6 +2653,7 @@ input[type="number"] {
       @media screen and (max-width: 767px) {
         .shop__list {
           flex-direction: column;
+          padding: 0;
         }
 
         .shop__list-item  {
@@ -2692,7 +2696,8 @@ input[type="number"] {
       font-size: 22px;
       font-family: "Oswald", "Arial", sans-serif;
       margin-top: 15px;
-      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin-bottom: 0;
     }
 
     .shop-easystars__list-btn {
@@ -2716,6 +2721,16 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
       font-weight: 500;
       text-decoration: none;
       margin-top: 20px;
+    }
+
+    .shop__list-item-btn-main:hover {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+
+    .shop__list-item-btn-main:focus {
+      outline: none;
+      opacity: 0.8;
     }
 
     .shop__list-item-btn {
@@ -2750,6 +2765,7 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
 
     .shop-easystars__list {
       list-style: none;
+      padding: 0;
 
       margin-top: 80px;
       display: flex;
@@ -2810,14 +2826,15 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
     }
 
     .shop-nav {
-      height: 50px;
+      height: 60px;
       padding: 20px;
     }
 
-    .carousel-item {
+    .shop-nav__item {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .shop-nav__item-btn {
@@ -2826,29 +2843,16 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
       padding: 8px 20px;
       border-radius: 20px;
       color: #fff;
-      margin-left: 110px;
     }
 
     .carousel--mobile {
       display: none;
     }
 
-      @media screen and (max-width: 1199px) {
-        .shop-nav__item-btn {
-          margin-left: 80px;
-        }
-      }
-
-      @media screen and (max-width: 991px) {
-        .shop-nav__item-btn {
-          margin-left: 30px;
-        }
-      }
 
       @media screen and (max-width: 767px) {
         .shop-nav__item-btn {
           display: inline-block;
-          margin-left: 70px;
           margin-bottom: 20px;
         }
 
@@ -2858,23 +2862,15 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
         }
       }
 
-      @media screen and (max-width: 500px) {
-        .shop-nav__item-btn {
-          margin-left: 50px;
+      @media screen and (max-width: 341px) {
+        .shop-nav__item {
+          flex-direction: column;
+        }
+        .shop-nav {
+          height: 250px;
         }
       }
 
-      @media screen and (max-width: 450px) {
-        .shop-nav__item-btn {
-          margin-left: 30px;
-        }
-      }
-
-      @media screen and (max-width: 400px) {
-        .shop-nav__item-btn {
-          margin-left: 20px;
-        }
-      }
 
     .shop-nav__item-btn:hover {
       opacity: 0.8;
@@ -2886,3 +2882,26 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
         padding: 20px 10px; }
       .chat__list-item textarea {
         width: 300px; } }
+
+  .currency-label {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+.custom-select {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border: 1px solid #ABAAAA;
+  border-radius: 10px;
+}
+
+.custom-select:hover {
+  opacity: 0.7;
+}
+
+.custom-select:focus {
+  opacity: 0.7;
+  outline: none;
+}
