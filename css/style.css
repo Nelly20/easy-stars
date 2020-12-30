@@ -2118,11 +2118,20 @@ input[type="file"] {
   margin-left: 0;
   font-size: 14px; }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   .chat {
     padding: 20px 10px; }
   .chat__list-item textarea {
-    width: 300px; } }
+    width: 200px; } }
+
+    @media screen and (max-width: 2000px) {
+      .chat__list-item textarea {
+        width: 420px; } }
+
+        @media screen and (max-width: 1399px) {
+          .chat__list-item textarea {
+            width: 360px; } }
+
 
 @media screen and (max-width: 991px) {
   .personal-info-news {
@@ -2256,8 +2265,7 @@ input[type="file"] {
     padding: 0; } }
 
 .easyoffice-sections {
-  margin-top: 50px;
-margin-bottom: 50px;}
+  margin-top: 50px;}
 
 .easyoffice-sections__list {
   margin: 0;
@@ -2276,7 +2284,6 @@ margin-bottom: 50px;}
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
-  margin-bottom: 50px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -2351,7 +2358,6 @@ margin-bottom: 50px;}
 .easyoffice-graphic--wrapper {
   display: grid;
   margin-top: 80px;
-  padding-top: 50px;
   margin-bottom: 80px;
   grid-row-gap: 80px;
   grid-template-columns: 1fr; }
@@ -2475,9 +2481,6 @@ canvas {
   .graphic-list {
     margin-top: 10px; } }
 
-.daily-sales {
-  margin-top: 50px;
-}
 
 .daily-sales__header {
   font-size: 18px;
@@ -2877,3 +2880,9 @@ linear-gradient(0deg, #FFAF36, #FFAF36);
       opacity: 0.8;
       color: #fff;
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .chat {
+        padding: 20px 10px; }
+      .chat__list-item textarea {
+        width: 300px; } }
